@@ -9,6 +9,8 @@ sed '1,5d' file.txt         # Delete lines 1 through 5
 sed 's/foo/bar/' file.txt             # Replace first 'foo' with 'bar' in each line
 sed 's/foo/bar/g' file.txt            # Replace all 'foo' with 'bar' in each line
 sed 's/foo/bar/2' file.txt            # Replace second 'foo' in each line
+sed '1s/foo/bar/2' file.txt           # Replace second 'foo' in first line only
+
 
 sed -i 's/foo/bar/g' file.txt         # Replace in the file directly
 sed -i.bak 's/foo/bar/g' file.txt     # Backup original to file.txt.bak before editing
